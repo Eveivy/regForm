@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+    font-size: 16px;
+    background-image: url("/images/bg-intro-desktop.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:  navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.flex_left {
+    width: 40%;
+    color: white;
+    padding: 10px;
+    margin-right: 60px;
+}
+
+.flex_right {
+    width: 40%;
+    padding: 10px;
+}
+.flex_left h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.paragraph {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 10px 10px 0 0;
+    margin: 10px 0 10px 0;
+}
+
+.dark-blue {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color:  black;
+    padding: 15px 35px 15px 35px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;
+}
+
+h5 {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+h5 span {
+    color: rgba(185, 182, 211, 0.789)
+}
+
+.card {
+    background-color: white;
+    border-radius: 7px;
+    padding: 25px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 0.1em solid hsl(246, 25%, 77%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.027), 0 6px 10px 0 rgba(0, 0, 0, 0.035);
+    border-radius: 5px;
+    position: relative;
+    outline: none;
+    text-transform: capitalize;
+}
+.err_icon{
+    position: absolute;
+    right: 150px;
+    margin-top: -35px;
+    margin-right: 10px;
+}
+.hide{
+    display: none;
+}
+.err_msg{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+.input_div{
+    padding: 10px;
+    text-align: end;
+}
+input:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.061), 0 6px 20px 0 rgba(0, 0, 0, 0.111);
+    border: none;
+    outline: unset;
+}
+
+button {
+    width: 100%;
+    background-color:  navy;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.061), 0 6px 20px 0 rgba(0, 0, 0, 0.111);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn span {
+    margin: 15px 0;
+    color: rgb(187, 177, 177);
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+#email{
+    text-transform: lowercase;
+}
+a {
+    text-decoration: none;
+    color:  red;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        background-image: url("/images/bg-intro-mobile.png");  
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .btn span{
+        font-size: 15px;
+    }
+    .err_icon{
+        right: 60px;
+    }
+
+    .flex_left {
+        width: 100%;
+        margin-bottom: 25px;
+        padding-left: 50px;
+    }
+
+    .flex_right {
+        width: 100%;
+        padding: 0;
+    }
+}

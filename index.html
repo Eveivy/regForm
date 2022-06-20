@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex_left">
+            <h1 class="header">Simple Registration Form</h1>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi, ullam dignissimos officiis magnam 
+                itaque maxime eos odio debitis, laborum alias atque, voluptatibus numquam! Illum saepe sequi id accusantium eius?</p>
+        </div>
+        <div class="flex_right">
+            <div class="dark-blue">
+                <h5>Try it free 7 days <span>then $20/mo. thereafter</span></h5>
+            </div>
+            <div class="card">
+                <form id="form_el">
+                    <div class="input_div">
+                        <input type="text" placeholder="First Name" name="FirstName" id="first_name">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide" id="icon1">
+                        <span class="err_msg hide" id="msg1">First Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="input_div">
+                        <input type="text" placeholder="Last Name" name="LastName" id="last_name">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide" id="icon2">
+                        <span class="err_msg hide" id="msg2">Last Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="input_div">
+                        <input type="email" placeholder="Email Address" name="Email" id="email">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide" id="icon3">
+                        <span class="err_msg hide" id="msg3">Email cannot be empty</span>
+                    </div>
+                   
+                    <div class="input_div">
+                        <input type="tel" placeholder="Phone" name="Phone" id="phone">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide" id="icon4">
+                        <span class="err_msg hide" id="msg4">Phone number cannot be empty</span>
+                    </div>
+                   
+                    <div class="btn">
+                        <button type="submit" id="btn_el">claim your free trial</button>
+                        <span class="text">By clicking the button, you are agreeing to our <a href="#">Terms and
+                                Services</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>
