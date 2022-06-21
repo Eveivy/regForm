@@ -1,9 +1,7 @@
 let formEl = document.getElementById("form_el")
 let btnEl = document.getElementById("btn_el")
 let input = document.querySelectorAll("input")
-let errorText = document.createElement("span")
 let errorIcon = document.querySelectorAll("img")
-let error = document.querySelectorAll(".err_msg")
 let fn = document.getElementById("first_name")
 let ln = document.getElementById("last_name")
 let em = document.getElementById("email")
@@ -22,15 +20,11 @@ formEl.addEventListener("submit", function (ev) {
             errorIcon.forEach(function (el) {
                 el.classList.remove("hide")
             })
-            error.forEach(function (el) {
-                el.classList.remove("hide")
-            })
         } 
         validateEach()
 
         if(name && value){
             localStorage.setItem(name, value)
-            console.log(localStorage)
         }
     }
 
@@ -47,8 +41,6 @@ function validateEach() {
     } else {
         fn.style.border = "none"
         document.getElementById("icon1").classList.add("hide")
-        document.getElementById("msg1").classList.add("hide")
-
     }
 
 
@@ -57,7 +49,6 @@ function validateEach() {
     } else {
         ln.style.border = "none"
         document.getElementById("icon2").classList.add("hide")
-        document.getElementById("msg2").classList.add("hide")
 
     }
 
@@ -67,8 +58,6 @@ function validateEach() {
     } else {
         em.style.border = "none"
         document.getElementById("icon3").classList.add("hide")
-        document.getElementById("msg3").classList.add("hide")
-
     }
 
 
@@ -77,8 +66,6 @@ function validateEach() {
     } else {
         nb.style.border = "none"
         document.getElementById("icon4").classList.add("hide")
-        document.getElementById("msg4").classList.add("hide")
-
     }
  
 }
