@@ -95,17 +95,12 @@ input {
 .err_icon{
     position: absolute;
     right: 150px;
-    margin-top: -35px;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
 }
 .hide{
     display: none;
 }
-.err_msg{
-    color: red;
-    font-style: italic;
-    font-size: 15px;
-}
+ 
 .input_div{
     padding: 10px;
     text-align: end;
